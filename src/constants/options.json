@@ -1,0 +1,27 @@
+{
+  "data": [
+    {
+      "id": "G",
+      "path": "race-type-G.svg",
+      "color": "green"
+    },
+    {
+      "id": "J",
+      "path": "race-type-J.svg",
+      "color": "blue"
+    },
+    {
+      "id": "T",
+      "path": "race-type-T.svg",
+      "color": "orange"
+    },
+    {
+      "id": "D",
+      "path": "race-type-D.svg",
+      "color": "purple"
+    }
+  ],
+  "options": {
+    "defult": ["G", "J", "T"]
+  }
+}
