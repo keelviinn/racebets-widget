@@ -28,7 +28,7 @@ export default defineComponent({
   },
   setup() {
     let raceTypes = ref<RaceType[]>(inputOptions.options.defult as RaceType[]);
-    let options = ref<Option[]>(inputOptions.data);
+    let options = ref<Option[]>(inputOptions.data as Option[]);
     let nextRace = ref<Race | null>(null);
 
     return {

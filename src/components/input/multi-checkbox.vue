@@ -1,7 +1,7 @@
 <template>
   <div class="flex items-center bg-white rounded-md border border-gray-200">
     <CheckboxImage v-for="option in options" :checked="value.includes(option.id)"
-      @update:checked="check(option.id, $event)" :id="option.id" :key="option.id" :path="option.path" :color="option.color" />
+      @update:checked="check(option.id, $event)" :id="option.id" :key="option.id" :color="option.color" />
   </div>
 </template>
 
@@ -23,13 +23,10 @@ export default {
         const hasIdKey = value.every((option) =>
           Object.keys(option).includes("id")
         );
-        const hasPathKey = value.every((option) =>
-          Object.keys(option).includes("path")
-        );
         const hasColorKey = value.every((option) =>
           Object.keys(option).includes("color")
         );
-        return hasIdKey && hasPathKey && hasColorKey;
+        return hasIdKey && hasColorKey;
       },
     },
   },

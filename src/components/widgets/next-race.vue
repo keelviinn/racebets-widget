@@ -28,7 +28,7 @@
       <div v-for="runner in nextRace.runners" :key="runner.id_runner"
         class="flex w-full bg-white justify-between px-2 py-3 border-b border-neutral-500 last:border-b-0">
         <div class="flex gap-2 justify-start items-center cursor-pointer" @click="() => externalURL(nextRace.id_race)">
-          <img v-if="runner.silk" :src="require('@/assets/silks/' + runner.silk)" class="w-4">
+          <img v-if="runner.silk.length > 1" :src="require('@/assets/silks/' + runner.silk)" class="w-4" v-html="runner.silk"> 
           <p>{{ runner.name }}</p>
         </div>
         <ButtonLink :text="String(runner.odds)" :onClick="() => externalURL(nextRace.id_race)"

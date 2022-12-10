@@ -36,7 +36,7 @@ export declare interface RaceResponse {
 }
 
 export declare type Option = {
-  id: string;
-  path: string;
+  id: RaceType;
+  path?: string;
   color: string;
 }

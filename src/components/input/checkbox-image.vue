@@ -26,7 +26,6 @@ export default {
       type: String,
       required: true,
     },
-    path: String,
     color: String,
     checked: Boolean,
   },
