@@ -1,29 +1,48 @@
-# vue-3
 
-## Project setup
-```
-yarn install
-```
+# Racebets Widget App
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+This is a small Vue app to create a Recebets Widget.
 
-### Compiles and minifies for production
-```
-yarn build
-```
+![plot](./public/racebets-widget.png)
 
-### Run your unit tests
-```
-yarn test:unit
-```
 
-### Lints and fixes files
-```
-yarn lint
+## Create by
+
+- [@Kelvin Oliveira](https://www.github.com/keelviinn)
+
+
+## Project Setup
+
+Dowload the application using git
+
+```bash
+    git clone https://github.com/keelviinn/racebets-widget.git
+
+    cd racebets-widget
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Then inside the project install the dependencies
+
+```bash
+    yarn install 
+    or 
+    npm install
+```
+
+After everything is installed you can run the project and see how it is in your navigator
+
+```bash
+    yarn serve
+    or
+    npm run serve
+```
+
+check it in: [localhost](http://localhost:8080)
+
+You can check the test, running
+
+```bash
+    yarn test:unit
+    or 
+    npm run test:unit
+```
